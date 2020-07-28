@@ -1,0 +1,289 @@
+:root {
+  --primary-color: #e50914;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+  /* overflow: hidden; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  border-bottom: 8px solid #222;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase-top {
+  position: relative;
+  z-index: 2;
+  height: 36px;
+}
+
+.showcase-top img {
+  width: 167px;
+  padding-top: 0.5px;
+  position: absolute;
+  top: 0;
+  left: 4%;
+}
+
+.btn__sign-in {
+  padding: 0.6px 0.6px;
+  position: absolute;
+  right: 2%;
+  z-index: 3;
+}
+
+.showcase-content {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.start-desc {
+  margin-top: 10rem;
+}
+
+.showcase-content h1 {
+  font-size: 50px;
+  word-wrap: break-word;
+}
+
+.showcase-content h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.showcase-content h3 {
+  font-weight: 400;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="email"] {
+  height: 50px;
+  width: 50%;
+  outline: none;
+  position: relative;
+  text-align: left;
+}
+
+input[type="email"]:focus {
+  border: 1px solid #0071eb;
+}
+
+::placeholder {
+  color: #8c8c8c;
+  font-family: inherit;
+}
+
+::placeholder:focus {
+  font-weight: 800;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  margin-right: 0.5rem;
+  color: white;
+}
+
+.btn:hover {
+  background: #f40612;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 1.6rem;
+  padding: 0.67rem 3rem;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  padding: 0.4rem 0.7rem;
+}
+
+/* Tabs CSS */
+
+.story-card {
+  padding: 70px 45px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 8px solid #222;
+}
+
+.animation-card-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-card-text {
+  width: 52%;
+  height: auto;
+  padding: 0 3rem 0 0;
+  z-index: 3;
+}
+
+.story-card-img-container {
+  width: 52%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.story-card-animation-container {
+  margin: -10% -5% -5% 0;
+}
+
+.story-card-img {
+  position: relative;
+  z-index: 2;
+}
+
+.story-card-video {
+  position: absolute;
+  right: 10%;
+}
+
+.story-card-2 {
+  padding: 70px 45px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 8px solid #222;
+}
+
+.story-card-2-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-card-2-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.story-card-3 {
+  padding: 70px 45px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 8px solid #222;
+}
+
+.story-card-3-text {
+  width: 52%;
+  height: auto;
+  padding: 0 3rem 0 0;
+  z-index: 3;
+}
+
+.story-card-3-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-card-3-img-container {
+  width: 52%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.story-card-3-img {
+  width: 530px;
+  height: auto;
+  z-index: 3;
+}
+
+.story-card-3-animation-container {
+  width: 45%;
+  height: 50%;
+}
+
+.story-card-3-video {
+  position: absolute;
+  right: 30%;
+  top: 1%;
+}
